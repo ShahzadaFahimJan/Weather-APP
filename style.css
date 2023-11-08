@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    margin-top: 70px;
+    
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    position: relative;
+    background-color: skyblue;
+    margin-right: 500px;
+    margin-left: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+#weathercon{
+    margin-right: -33px;
+    margin-top :-137px;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    margin-left: -100px;
+    
+    margin-top: 150px;
+    
+}
+.sun{
+   
+    font-size: 50px;
+    position: relative;
+    margin-left: 66px;
+    
+}
+.info{
+    margin-top: 50px;
+    padding: 20px;
+    
+   
+    
+    
+}
+#data{
+    margin-left: -103px;
+    margin-top: 10px;
+    
+
+}
+.temp{
+    margin-left: -34px;
+    margin-top: 10px;
+    
+}
+.tempmin_max{
+    margin-left: -61px;
+    margin-top: 10px;
+    
+}
+
+  
+.wave-one {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) scale(0.6);
+    width: 180%;
+    height: 160%;
+    background-color:rgba(94, 94, 141, 0.188);
+    animation: rotate 6s linear infinite;
+  }
+  .wave-two {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) scale(0.6);
+    width: 190%;
+    height: 170%;
+    background-color:rgba(114, 114, 153, 0.188);
+    animation: rotate 6s linear infinite;
+  }
+  .wave-three {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) scale(0.6);
+    width: 200%;
+    height: 180%;
+    background-color:rgba(92, 92, 133, 0.2);
+    animation: rotate 6s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(360deg) scale(0.6);
+      border-radius: 30%;
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(180deg) scale(0.6);
+      border-radius: 40%;
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg) scale(0.6);
+      border-radius: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .box {
+        margin-top: 20%;
+        margin-right: 5%;
+        margin-left: 5%;
+        height: 70vh;
+    }
+    .sun {
+        font-size: 6vw;
+        margin-left: 8%;
+    }
+}
+.fa-street-view{
+  font-size: 30px;
+  
+}
